@@ -19,5 +19,5 @@ else if(n == 0)
     printf("n is zero\n");
 else if(n < 0)
     printf("n is negative\n");
-    return (0);
+return (0);
 }
