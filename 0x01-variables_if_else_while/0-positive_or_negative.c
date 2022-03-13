@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
 *main - function
+*prints whether int is positive
+*negative or zero
 *Return: value 0
 */
 int main(void)
