@@ -3,9 +3,8 @@
 #include <time.h>
 
 /*
-* main - assigns a random number to int n everytime
-* it executes, and prints it
-* Return: Always 0 (Success)
+*main - function
+*Return: value 0
 */
 int main(void)
 {
@@ -14,10 +13,10 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
-printf("n is positive\n");
+printf("%d is positive\n");
 else if (n == 0)
-printf("n is zero\n");
+printf("%d is zero\n");
 else if (n < 0)
-printf("n is negative\n");
+printf("%d is negative\n");
 return (0);
 }
