@@ -1,31 +1,43 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Print_comb4
- * Description: Conditionals in C
- * Return: void
- */
+ * main - function
+ * Description: prints all possible different combinations of three digits
+ * Return: 0
+*/
 int main(void)
 {
-	int num1, num2, num3;
+	int c;
+	int d;
+	int e = 0;
 
-	for (num1 = 0; num1 < 8; num1++)
+	while (e < 10)
 	{
-		for (num2 = num1 + 1; num2 < 9; num2++)
+		d = 0;
+		while (d < 10)
 		{
-			for (num3 = num2 + 1; num3 < 10; num3++)
+			c = 0;
+			while (c < 10)
 			{
-			putchar((num1 % 10) + '0');
-			putchar((num2 % 10) + '0');
-			putchar((num3 % 10) + '0');
+				if (c != d && d != e && e < d && d < c)
+				{
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
 
-			if (num1 == 7 && num2 == 8 && num3 == 9)
-				continue;
+					if (c + d + e != 9 + 8 + 7)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 
-			putchar(',');
-			putchar(' ');
+				c++;
 			}
+			d++;
 		}
+		e++;
 	}
+	putchar('\n');
+	return (0);
 }
-   
