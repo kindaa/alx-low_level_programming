@@ -1,15 +1,20 @@
 #include <stdio.h>
 /**
-*main - function
+ *main - function
  *Return: valve 0
  */
 int main(void)
 {
-int i;
-for (i '0'; i <= '9'; i++)
+int a;
+int b;
+int c;
+for (a = 0; a < 100; a++)
 {
-putchar(i);
-if (i < '9')
+b = a / 10;
+c = a % 10;
+putchar(b + '0');
+putchar(c + '0');
+if (a < 99)
 {
 putchar(',');
 putchar(' ');
