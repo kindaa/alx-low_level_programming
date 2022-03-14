@@ -1,25 +1,31 @@
 #include <stdio.h>
+
 /**
- *main - function
- *Return: valve 0
+ * main - Print_comb4
+ * Description: Conditionals in C
+ * Return: void
  */
 int main(void)
 {
-int a;
-int b;
-int c;
-for (a = 0; a < 100; a++)
-{
-b = a / 10;
-c = a % 10;
-putchar(b + '0');
-putchar(c + '0');
-if (a < 99)
-{
-putchar(',');
-putchar(' ');
+	int num1, num2, num3;
+
+	for (num1 = 0; num1 < 8; num1++)
+	{
+		for (num2 = num1 + 1; num2 < 9; num2++)
+		{
+			for (num3 = num2 + 1; num3 < 10; num3++)
+			{
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
+			putchar((num3 % 10) + '0');
+
+			if (num1 == 7 && num2 == 8 && num3 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+			}
+		}
+	}
 }
-}
-putchar('\n');
-return (0);
-}
+   
