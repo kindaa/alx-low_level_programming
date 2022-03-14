@@ -3,11 +3,11 @@
 #include <time.h>
 
 /**
- *main-function 
- *prints the last digit 
- *stored by n
- *return: value 0
- */
+*main-function 
+*prints the last digit 
+*stored by n
+*return: value 0
+*/
 int main(void)
 {
 int n;
