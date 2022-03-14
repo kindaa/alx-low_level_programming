@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
-*main-function 
-*prints the last digit 
+*main-function
+*prints the last digit
 *stored by n
 *return: value 0
 */
