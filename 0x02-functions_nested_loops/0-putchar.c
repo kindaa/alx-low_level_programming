@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-* main - prints putchar 
+* main - function
+* Description: prints putchar
 * returns 0
 */
 int main(void)
@@ -14,5 +15,5 @@ char c[9] = "_putchar";
 		i++;
 	}
 	_putchar ('\n');
-return (0); 
+return (0);
 }
