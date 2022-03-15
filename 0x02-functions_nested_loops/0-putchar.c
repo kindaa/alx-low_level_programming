@@ -2,7 +2,7 @@
 /**
 * main - function
 * Description: prints putchar
-* returns 0
+* Return: 0
 */
 int main(void)
 {
