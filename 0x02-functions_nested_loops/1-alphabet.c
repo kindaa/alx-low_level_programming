@@ -3,6 +3,7 @@
 /**
  * main - function
  * Description: prints alphabet lowercase
+ * return: 0
  */
 void print_alphabet(void)
 {
