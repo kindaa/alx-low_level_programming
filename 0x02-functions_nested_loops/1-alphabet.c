@@ -2,14 +2,14 @@
 #include "main.h"
 /**
  * main - function
- * description - prints alphabet lowercase
- * return - 0 
+ * Description - prints alphabet lowercase
+ * return - 0
  */
 void print_alphabet(void)
 {
     char c = 'a';
 
-    while(c <= 'z')
+    while (c <= 'z')
     {
         _putchar(c);
         c++;
