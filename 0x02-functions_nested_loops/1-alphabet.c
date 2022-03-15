@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main - function
-* description for function print_alphabet: prints the alphabet
-* in lowercase, followed by a new line
-* return: 0
-*/
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line
+ */
 void print_alphabet(void)
 {
 char c = 'a';
