@@ -1,24 +1,17 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
-* main - causes an infinite loop
-* Return: 0
-*/
-
-int main(void)
+ *_isdigit - check for a digit
+ *@c: it's a variable
+ *Return: valve 0
+ */
+int _isdigit(int c)
 {
-	int i;
-
-	printf("Infinite loop incoming :(\n");
-
-	i = 0;
-/*
-*	while (i < 10)
-*	{
-*		putchar(i);
-*	}
-*/
-	printf("Infinite loop avoided! \\o/\n");
-
-	return (0);
+if (c >= 48 && c < 58)
+{
+return (1);
+}
+else
+{
+return (0);
+}
 }
